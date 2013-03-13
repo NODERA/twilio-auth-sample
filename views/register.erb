@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Twilio認証サンプル</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Twilio認証サンプル</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>電話認証</h1>
+        <p>下記の電話番号にコールして、ユーザ認証を行なって下さい</p>
+        <h3>050-3133-1484</h3>
+        <h3>確認番号： <%= @digit %></h3>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span16">
+          <div id="result">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; NODERA CORPORATION 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
